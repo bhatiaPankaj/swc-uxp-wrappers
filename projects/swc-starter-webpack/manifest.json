@@ -15,21 +15,27 @@
                 "default": "SWC Starter"
             },
             "minimumSize": {
-                "width": 1200,
-                "height": 1200
+                "width": 800,
+                "height": 800
             },
             "maximumSize": {
-                "width": 1200,
-                "height": 1200
+                "width": 100,
+                "height": 800
             },
             "preferredDockedSize": {
-                "width": 1200,
-                "height": 1200
+                "width": 800,
+                "height": 800
             },
             "preferredFloatingSize": {
-                "width": 1200,
-                "height": 1200
-            }
+                "width": 800,
+                "height": 800
+            },
+            "commands": [
+                {
+                    "id": "reloadPanel",
+                    "label": "Reload Panel"
+                }
+            ]
         }
     ],
     "host": [
