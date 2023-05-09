@@ -13,5 +13,5 @@ governing permissions and limitations under the License.
 /* write uxp style overrides */
 
 #input {
-    visibility: hidden;
+    opacity: 0;
 }

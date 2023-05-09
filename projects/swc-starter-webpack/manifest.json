@@ -15,19 +15,19 @@
                 "default": "SWC Starter"
             },
             "minimumSize": {
-                "width": 800,
+                "width": 1200,
                 "height": 800
             },
             "maximumSize": {
-                "width": 100,
+                "width": 1200,
                 "height": 800
             },
             "preferredDockedSize": {
-                "width": 800,
+                "width": 1200,
                 "height": 800
             },
             "preferredFloatingSize": {
-                "width": 800,
+                "width": 1200,
                 "height": 800
             },
             "commands": [
