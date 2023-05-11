@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 
 import { Banner } from '@spectrum-web-components/banner';
 import { Divider } from '@spectrum-web-components/divider';
-import { IllustratedMessage } from '@swc-uxp-wrappers/illustrated-message'
+import { IllustratedMessage } from '@spectrum-web-components/illustrated-message';
 import { Link } from '@spectrum-web-components/link';
 import { Avatar } from '@spectrum-web-components/avatar';
 import { FieldLabel } from '@spectrum-web-components/field-label';
@@ -35,8 +35,6 @@ class MyBanner extends Banner {
     ];
 }
 
-customElements.define('my-banner', MyBanner);
-
 class MyDivider extends Divider {
     static styles = [
         Divider.styles,
@@ -47,8 +45,6 @@ class MyDivider extends Divider {
         `,
     ];
 }
-
-customElements.define('my-divider', MyDivider);
 
 class MyIllustratedMessage extends IllustratedMessage {
     static styles = [
@@ -61,8 +57,6 @@ class MyIllustratedMessage extends IllustratedMessage {
     ];
 }
 
-customElements.define('my-illustrated-message', MyIllustratedMessage);
-
 class MyLink extends Link {
     static styles = [
         Link.styles,
@@ -73,8 +67,6 @@ class MyLink extends Link {
         `,
     ];
 }
-
-customElements.define('my-link', MyLink);
 
 class MyAvatar extends Avatar {
     static styles = [
@@ -87,8 +79,6 @@ class MyAvatar extends Avatar {
     ];
 }
 
-customElements.define('my-avatar', MyAvatar);
-
 class MyFieldLabel extends FieldLabel {
     static styles = [
         FieldLabel.styles,
@@ -99,8 +89,6 @@ class MyFieldLabel extends FieldLabel {
         `,
     ];
 }
-
-customElements.define('my-field-label', MyFieldLabel);
 
 class MyButton extends Button {
     static styles = [
@@ -113,8 +101,6 @@ class MyButton extends Button {
     ];
 }
 
-customElements.define('my-button', MyButton);
-
 class MyActionButton extends ActionButton {
     static styles = [
         ActionButton.styles,
@@ -125,8 +111,6 @@ class MyActionButton extends ActionButton {
         `,
     ];
 }
-
-customElements.define('my-action-button', MyActionButton);
 
 class MyCard extends Card {
     static styles = [
@@ -139,8 +123,6 @@ class MyCard extends Card {
     ];
 }
 
-customElements.define('my-card', MyCard);
-
 class MyCheckbox extends Checkbox {
     static styles = [
         Checkbox.styles,
@@ -151,8 +133,6 @@ class MyCheckbox extends Checkbox {
         `,
     ];
 }
-
-customElements.define('my-checkbox', MyCheckbox);
 
 class MyActionGroup extends ActionGroup {
     static styles = [
@@ -165,4 +145,14 @@ class MyActionGroup extends ActionGroup {
     ];
 }
 
+customElements.define('my-banner', MyBanner);
 customElements.define('my-action-group', MyActionGroup);
+customElements.define('my-checkbox', MyCheckbox);
+customElements.define('my-card', MyCard);
+customElements.define('my-action-button', MyActionButton);
+customElements.define('my-button', MyButton);
+customElements.define('my-field-label', MyFieldLabel);
+customElements.define('my-avatar', MyAvatar);
+customElements.define('my-divider', MyDivider);
+customElements.define('my-illustrated-message', MyIllustratedMessage);
+customElements.define('my-link', MyLink);

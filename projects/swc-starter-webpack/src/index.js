@@ -30,9 +30,4 @@ import '@spectrum-web-components/action-group/sp-action-group.js';
 
 import '@spectrum-web-components/textfield/sp-textfield.js';
 
-import '@spectrum-web-components/theme/theme-light.js';
-import '@spectrum-web-components/theme/theme-lightest.js';
-import '@spectrum-web-components/theme/scale-medium.js';
-import '@spectrum-web-components/theme/scale-large.js';
-
 import './my-elements.js';

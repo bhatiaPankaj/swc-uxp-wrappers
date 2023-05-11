@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 
 /* write uxp style overrides */
 
-:host([side-aligned="end"]) {
+:host([side-aligned='end']) {
     display: inline-flex;
     justify-content: flex-end;
 }
@@ -26,7 +26,7 @@ governing permissions and limitations under the License.
         --mod-fieldlabel-side-padding-right,
         var(--spectrum-fieldlabel-side-padding-right)
     );
-} 
+}
 
 .required-icon {
     margin-left: var(

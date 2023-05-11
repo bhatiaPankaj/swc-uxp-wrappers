@@ -26,7 +26,6 @@
         "@swc-uxp-wrappers/checkbox": "*",
         "@spectrum-web-components/theme": "0.14.9",
         "@spectrum-web-components/textfield": "0.13.8",
-
         "lit": "^2.0.0"
     },
     "devDependencies": {
