@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { ActionGroup } from '@swc-uxp-internal/action-group';
+import { ActionGroup } from '@swc-uxp-internal/action-group/src/ActionGroup.js';
 
 import styles from './uxp-action-group.css.js';
 

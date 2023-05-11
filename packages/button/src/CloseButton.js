@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { CloseButton } from '@swc-uxp-internal/button';
+import { CloseButton } from '@swc-uxp-internal/button/src/CloseButton.js';
 
 import styles from './uxp-close-button.css.js';
 

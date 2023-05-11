@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { ActionButton } from '@swc-uxp-internal/action-button';
+import { ActionButton } from '@swc-uxp-internal/action-button/src/ActionButton.js';
 
 import styles from './uxp-action-button.css.js';
 

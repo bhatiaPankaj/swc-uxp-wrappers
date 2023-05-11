@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { Checkbox } from '@swc-uxp-internal/checkbox';
+import { Checkbox } from '@swc-uxp-internal/checkbox/src/Checkbox.js';
 
 import styles from './uxp-checkbox.css.js';
 

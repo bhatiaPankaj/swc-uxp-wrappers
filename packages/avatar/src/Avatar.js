@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { Avatar } from '@swc-uxp-internal/avatar';
+import { Avatar } from '@swc-uxp-internal/avatar/src/Avatar.js';
 
 import styles from './uxp-avatar.css.js';
 

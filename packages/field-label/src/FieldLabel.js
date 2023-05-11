@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { FieldLabel } from '@swc-uxp-internal/field-label';
+import { FieldLabel } from '@swc-uxp-internal/field-label/src/FieldLabel.js';
 
 import styles from './uxp-field-label.css.js';
 
