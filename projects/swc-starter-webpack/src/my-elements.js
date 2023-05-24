@@ -21,6 +21,14 @@ import { ActionButton } from '@spectrum-web-components/action-button';
 import { ActionGroup } from '@spectrum-web-components/action-group';
 import { Card } from '@spectrum-web-components/card';
 import { Checkbox } from '@spectrum-web-components/checkbox';
+import { ActionBar } from '@spectrum-web-components/action-bar';
+import { Popover } from '@spectrum-web-components/popover';
+import { Tooltip } from '@spectrum-web-components/tooltip';
+import { Menu } from '@spectrum-web-components/menu';
+import { MenuItem } from '@spectrum-web-components/menu';
+import { MenuDivider } from '@spectrum-web-components/menu';
+import { MenuGroup } from '@spectrum-web-components/menu';
+import { PickerButton } from '@spectrum-web-components/picker-button';
 
 import { css } from 'lit';
 
@@ -29,7 +37,9 @@ class MyBanner extends Banner {
         Banner.styles,
         css`
             :host([type='info']) {
-                background-color: rgb(103, 58, 183);
+                background: aquamarine;
+                color: black;
+                font-style: italic;
             }
         `,
     ];
@@ -51,7 +61,7 @@ class MyIllustratedMessage extends IllustratedMessage {
         IllustratedMessage.styles,
         css`
             :host([class='my-illustrated-message']) {
-                background-color: rgb(103, 58, 183);
+                background-color: beige;
             }
         `,
     ];
@@ -63,6 +73,7 @@ class MyLink extends Link {
         css`
             :host([class='my-link']) {
                 font-size: 20px;
+                font-style: italic;
             }
         `,
     ];
@@ -72,8 +83,8 @@ class MyAvatar extends Avatar {
     static styles = [
         Avatar.styles,
         css`
-            :host([class='my-avatar']) {
-                background-color: rgb(103, 58, 183);
+            :host([size='700']) {
+                --spectrum-avatar-border-radius: 0px;
             }
         `,
     ];
@@ -84,7 +95,7 @@ class MyFieldLabel extends FieldLabel {
         FieldLabel.styles,
         css`
             :host([class='my-field-label']) {
-                background-color: beige;
+                font-style: italic;
             }
         `,
     ];
@@ -107,6 +118,9 @@ class MyActionButton extends ActionButton {
         css`
             :host([class='my-action-button']) {
                 font-size: 20px;
+                font-family: system-ui;
+                font-style: italic;
+                background-color: chartreuse;
             }
         `,
     ];
@@ -127,8 +141,8 @@ class MyCheckbox extends Checkbox {
     static styles = [
         Checkbox.styles,
         css`
-            :host {
-                background-color: beige;
+            #box {
+                transform: rotate(45deg);
             }
         `,
     ];
@@ -139,7 +153,100 @@ class MyActionGroup extends ActionGroup {
         ActionGroup.styles,
         css`
             :host([class='my-action-group']) {
-                font-size: 20px;
+                background-color: antiquewhite;
+            }
+        `,
+    ];
+}
+
+class MyActionBar extends ActionBar {
+    static styles = [
+        ActionBar.styles,
+        css`
+            :host([open]) {
+                background-color: antiquewhite;
+            }
+        `,
+    ];
+}
+
+class MyPopover extends Popover {
+    static styles = [
+        Popover.styles,
+        css`
+            :host([class='my-popover']) {
+                background-color: beige;
+            }
+        `,
+    ];
+}
+
+class MyTooltip extends Tooltip {
+    static styles = [
+        Tooltip.styles,
+        css`
+            :host([class='my-tooltip']) {
+                color: yellow;
+                font-style: italic;
+            }
+        `,
+    ];
+}
+
+class MyPickerButton extends PickerButton {
+    static styles = [
+        PickerButton.styles,
+        css`
+            sp-icon-chevron200 {
+                transform: rotate(45deg);
+            }
+        `,
+    ];
+}
+
+class MyMenu extends Menu {
+    static styles = [
+        Menu.styles,
+        css`
+            :host([class='my-menu']) {
+                background-color: antiquewhite;
+            }
+        `,
+    ];
+}
+
+class MyMenuItem extends MenuItem {
+    static styles = [
+        MenuItem.styles,
+        css`
+            :host([class='my-menu-item']) {
+                background-color: antiquewhite;
+            }
+            :host([dir='ltr']) slot[name='icon'] + #label {
+                font-style: italic;
+            }
+        `,
+    ];
+}
+
+class MyMenuDivider extends MenuDivider {
+    static styles = [
+        MenuDivider.styles,
+        css`
+            :host([class='my-menu-divider']) {
+                background-color: yellow;
+            }
+        `,
+    ];
+}
+
+class MyMenuGroup extends MenuGroup {
+    static styles = [
+        MenuGroup.styles,
+        css`
+            .header {
+                font-size: larger;
+                background-color: aquamarine;
             }
         `,
     ];
@@ -156,3 +263,11 @@ customElements.define('my-avatar', MyAvatar);
 customElements.define('my-divider', MyDivider);
 customElements.define('my-illustrated-message', MyIllustratedMessage);
 customElements.define('my-link', MyLink);
+customElements.define('my-action-bar', MyActionBar);
+customElements.define('my-popover', MyPopover);
+customElements.define('my-tooltip', MyTooltip);
+customElements.define('my-menu', MyMenu);
+customElements.define('my-menu-item', MyMenuItem);
+customElements.define('my-menu-divider', MyMenuDivider);
+customElements.define('my-menu-group', MyMenuGroup);
+customElements.define('my-picker-button', MyPickerButton);

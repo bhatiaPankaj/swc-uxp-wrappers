@@ -138,6 +138,28 @@ const shared = (env) => {
                 '@spectrum-web-components/menu': '@swc-uxp-wrappers/menu',
                 '@spectrum-web-components/action-group':
                     '@swc-uxp-wrappers/action-group',
+                '@spectrum-web-components/action-bar':
+                    '@swc-uxp-wrappers/action-bar',
+                '@spectrum-web-components/popover': '@swc-uxp-wrappers/popover',
+                '@spectrum-web-components/tooltip': '@swc-uxp-wrappers/tooltip',
+                '@spectrum-web-components/picker-button':
+                    '@swc-uxp-wrappers/picker-button',
+                '@spectrum-web-components/menu': '@swc-uxp-wrappers/menu',
+                '@spectrum-web-components/table': '@swc-uxp-wrappers/table',
+                '@spectrum-web-components/textfield':
+                    '@swc-uxp-wrappers/textfield',
+                '@spectrum-web-components/help-text':
+                    '@swc-uxp-wrappers/help-text',
+                '@spectrum-web-components/button-group':
+                    '@swc-uxp-wrappers/button-group',
+                '@spectrum-web-components/dialog': '@swc-uxp-wrappers/dialog',
+                '../sp-menu.dev.js': '@spectrum-web-components/menu/sp-menu.js',
+                '../sp-table-row.dev.js':
+                    '@spectrum-web-components/table/sp-table-row.js',
+                '../sp-table-checkbox-cell.dev.js':
+                    '@spectrum-web-components/table/sp-table-checkbox-cell.js',
+                '../sp-table-body.dev.js':
+                    '@spectrum-web-components/table/sp-table-body.js',
             },
         },
         plugins,
