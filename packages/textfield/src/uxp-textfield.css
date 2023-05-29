@@ -12,14 +12,11 @@ governing permissions and limitations under the License.
 
 /* write uxp style overrides */
 
+/* Workaround for - 
+    https://jira.corp.adobe.com/browse/UXP-20703
+    https://jira.corp.adobe.com/browse/UXP-21323 
+*/
 .input {
     padding-left: var(--spectrum-textarea-padding-left);
     appearance: none;
-}
-
-:host([dir='ltr'][valid]) #textfield .input {
-    padding-right: calc(
-        var(--spectrum-textfield-texticon-padding-right) +
-            var(--spectrum-textfield-texticon-success-icon-width)
-    );
 }

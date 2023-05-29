@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 
 /* write uxp style overrides */
 
+/* Workaround for - https://jira.corp.adobe.com/browse/UXP-21331 */
 :host {
     box-shadow: 0 2px 6px
         var(
@@ -24,6 +25,7 @@ governing permissions and limitations under the License.
     transform: rotate(180deg);
 }
 
+/* Workaround for - https://jira.corp.adobe.com/browse/UXP-21332 */
 :host([placement*='left']) .tip {
     transform: rotate(-90deg);
     height: 22px;

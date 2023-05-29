@@ -12,15 +12,17 @@ governing permissions and limitations under the License.
 
 /* write uxp style overrides */
 
-#tip:after {
-    border-width: calc(0.6 * var(--spectrum-tooltip-tip-height));
-}
-
+/* Workaround for - https://jira.corp.adobe.com/browse/UXP-21333 */
 #label {
     margin-bottom: var(
         --spectrum-tooltip-neutral-text-margin-top,
         var(--spectrum-global-dimension-static-size-50)
     );
+}
+
+/* Workarounds for - https://jira.corp.adobe.com/browse/UXP-21118 */
+#tip:after {
+    border-width: calc(0.6 * var(--spectrum-tooltip-tip-height));
 }
 
 :host([placement*='top']) #tip:after {

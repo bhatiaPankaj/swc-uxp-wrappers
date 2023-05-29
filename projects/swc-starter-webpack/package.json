@@ -15,7 +15,6 @@
     "dependencies": {
         "@swc-uxp-wrappers/banner": "*",
         "@swc-uxp-wrappers/divider": "*",
-        "@swc-uxp-wrappers/dialog": "*",
         "@swc-uxp-wrappers/link": "*",
         "@swc-uxp-wrappers/illustrated-message": "*",
         "@swc-uxp-wrappers/avatar": "*",
@@ -31,7 +30,6 @@
         "@swc-uxp-wrappers/textfield": "*",
         "@swc-uxp-wrappers/checkbox": "*",
         "@swc-uxp-wrappers/tooltip": "*",
-        "@swc-uxp-wrappers/button-group": "*",
         "@swc-uxp-wrappers/help-text": "*",
         "@swc-uxp-wrappers/picker-button": "*",
         "@spectrum-web-components/theme": "0.14.9",

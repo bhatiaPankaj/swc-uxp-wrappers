@@ -150,9 +150,6 @@ const shared = (env) => {
                     '@swc-uxp-wrappers/textfield',
                 '@spectrum-web-components/help-text':
                     '@swc-uxp-wrappers/help-text',
-                '@spectrum-web-components/button-group':
-                    '@swc-uxp-wrappers/button-group',
-                '@spectrum-web-components/dialog': '@swc-uxp-wrappers/dialog',
                 '../sp-menu.dev.js': '@spectrum-web-components/menu/sp-menu.js',
                 '../sp-table-row.dev.js':
                     '@spectrum-web-components/table/sp-table-row.js',

@@ -11,8 +11,6 @@ governing permissions and limitations under the License.
 */
 
 export * from './HelpText.js';
-export * from './src/HelpTextManagedElement.js';
-export * from './src/HelpTextManager.js';
-export * from './src/manage-help-text.js';
-export * from './help-text-manager.js';
-export * from '.HelpTextManager.js';
+export * from './HelpTextManagedElement.js';
+export * from './HelpTextManager.js';
+export * from './manage-help-text.js';

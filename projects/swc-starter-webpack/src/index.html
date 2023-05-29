@@ -37,7 +37,7 @@ governing permissions and limitations under the License.
     </head>
 
     <body>
-        <script src="main.bundle.js"></script>
+        <script defer src="main.bundle.js"></script>
 
         <sp-theme scale="medium" color="light">
             <div class="tab">
@@ -142,15 +142,6 @@ governing permissions and limitations under the License.
                     onclick="openTab(event, 'sp-help-text')"
                 >
                     sp-help-text
-                </button>
-                <button
-                    class="tablinks"
-                    onclick="openTab(event, 'sp-button-group')"
-                >
-                    sp-button-group
-                </button>
-                <button class="tablinks" onclick="openTab(event, 'sp-dialog')">
-                    sp-dialog
                 </button>
             </div>
 
@@ -297,7 +288,7 @@ governing permissions and limitations under the License.
                         <sp-avatar
                             size="700"
                             label="Dog the User"
-                            src="https://place.dog/500/500"
+                            src="https://picsum.photos/500/500"
                         ></sp-avatar>
                     </div>
 
@@ -311,7 +302,7 @@ governing permissions and limitations under the License.
                             class="my-avatar"
                             size="700"
                             label="Dog the User"
-                            src="https://place.dog/700/700"
+                            src="https://picsum.photos/700/700"
                         ></my-avatar>
                     </div>
                 </div>
@@ -1379,10 +1370,11 @@ governing permissions and limitations under the License.
                     <div id="right">
                         <div id="subtitle">my-menu</div>
                         <my-menu
+                            selects="single"
                             class="my-menu"
                             style="margin: 20px; width: 200px"
                         >
-                            <sp-menu-item>
+                            <sp-menu-item selected>
                                 <sp-icon-edit slot="icon"></sp-icon-edit>
                                 Save
                             </sp-menu-item>
@@ -1828,83 +1820,6 @@ governing permissions and limitations under the License.
                                     </sp-table-row>
                                 </sp-table-body>
                             </sp-table>
-
-                            <sp-table
-                                size="m"
-                                selects="single"
-                                selected='["row1"]'
-                                style="height: 200px"
-                                onchange="alert(this, `Selected: ${JSON.stringify(this.selected)}`)"
-                            >
-                                <sp-table-head>
-                                    <sp-table-head-cell>
-                                        Column Title
-                                    </sp-table-head-cell>
-                                    <sp-table-head-cell>
-                                        Column Title
-                                    </sp-table-head-cell>
-                                    <sp-table-head-cell>
-                                        Column Title
-                                    </sp-table-head-cell>
-                                </sp-table-head>
-                                <sp-table-body>
-                                    <sp-table-row value="row1">
-                                        <sp-table-cell>
-                                            Row Item Alpha
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Alpha
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Alpha
-                                        </sp-table-cell>
-                                    </sp-table-row>
-                                    <sp-table-row value="row2">
-                                        <sp-table-cell>
-                                            Row Item Bravo
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Bravo
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Bravo
-                                        </sp-table-cell>
-                                    </sp-table-row>
-                                    <sp-table-row value="row3">
-                                        <sp-table-cell>
-                                            Row Item Charlie
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Charlie
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Charlie
-                                        </sp-table-cell>
-                                    </sp-table-row>
-                                    <sp-table-row value="row4">
-                                        <sp-table-cell>
-                                            Row Item Delta
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Delta
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Delta
-                                        </sp-table-cell>
-                                    </sp-table-row>
-                                    <sp-table-row value="row5">
-                                        <sp-table-cell>
-                                            Row Item Echo
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Echo
-                                        </sp-table-cell>
-                                        <sp-table-cell>
-                                            Row Item Echo
-                                        </sp-table-cell>
-                                    </sp-table-row>
-                                </sp-table-body>
-                            </sp-table>
                         </div>
                     </div>
 
@@ -1985,14 +1900,12 @@ governing permissions and limitations under the License.
 
                     <div id="right">
                         <div id="subtitle">my-textfield</div>
-                        <sp-icon-arrow75></sp-icon-arrow75>
-                        <sp-icon-abc></sp-icon-abc>
-                        <sp-icon-actions></sp-icon-actions>
-                        <sp-icon-add></sp-icon-add>
-                        <sp-icon-add-circle></sp-icon-add-circle>
-                        <sp-icon-display-advert></sp-icon-display-advert>
-                        <sp-icon-add-to></sp-icon-add-to>
-                        <sp-icon-add-to-selection></sp-icon-add-to-selection>
+                        <sp-field-label for="name-0">Name</sp-field-label>
+                        <my-textfield
+                            id="name-0"
+                            placeholder="Enter your name"
+                            value="This is my-textfield"
+                        ></my-textfield>
                     </div>
                 </div>
             </div>
@@ -2028,200 +1941,11 @@ governing permissions and limitations under the License.
 
                     <div id="right">
                         <div id="subtitle">my-help-text</div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="sp-button-group" class="tabcontent">
-                <h3>sp-button-group</h3>
-
-                <div id="content">
-                    <div id="left">
-                        <div id="subtitle">sp-button-group</div>
-                        <sp-button-group>
-                            <sp-button variant="primary">Button 1</sp-button>
-                            <sp-button variant="negative">
-                                Longer Button 2
-                            </sp-button>
-                            <sp-button variant="secondary">Short 3</sp-button>
-                        </sp-button-group>
-
-                        <sp-button-group vertical style="padding-top: 30px">
-                            <sp-button variant="primary">Button 1</sp-button>
-                            <sp-button variant="negative">
-                                Longer Button 2
-                            </sp-button>
-                            <sp-button disabled variant="secondary">
-                                Short 3
-                            </sp-button>
-                        </sp-button-group>
-                    </div>
-
-                    <div id="right">
-                        <div id="subtitle">my-button-group</div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="sp-dialog" class="tabcontent">
-                <h3>sp-dialog</h3>
-
-                <div id="content">
-                    <div id="left">
-                        <div id="subtitle">sp-dialog</div>
-                        <sp-dialog size="s">
-                            <h2 slot="heading">Disclaimer</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Auctor augue mauris augue neque
-                            gravida. Libero volutpat sed ornare arcu. Quisque
-                            egestas diam in arcu cursus euismod quis viverra.
-                            Posuere ac ut consequat semper viverra nam libero
-                            justo laoreet. Enim ut tellus elementum sagittis
-                            vitae et leo duis ut. Neque laoreet suspendisse
-                            interdum consectetur libero id faucibus nisl. Diam
-                            volutpat commodo sed egestas egestas. Dolor magna
-                            eget est lorem ipsum dolor. Vitae suscipit tellus
-                            mauris a diam maecenas sed. Turpis in eu mi bibendum
-                            neque egestas congue. Rhoncus est pellentesque elit
-                            ullamcorper dignissim cras lobortis.
-                        </sp-dialog>
-
-                        <sp-dialog size="l">
-                            <h2 slot="heading">Disclaimer</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Auctor augue mauris augue neque
-                            gravida. Libero volutpat sed ornare arcu. Quisque
-                            egestas diam in arcu cursus euismod quis viverra.
-                            Posuere ac ut consequat semper viverra nam libero
-                            justo laoreet. Enim ut tellus elementum sagittis
-                            vitae et leo duis ut. Neque laoreet suspendisse
-                            interdum consectetur libero id faucibus nisl. Diam
-                            volutpat commodo sed egestas egestas. Dolor magna
-                            eget est lorem ipsum dolor. Vitae suscipit tellus
-                            mauris a diam maecenas sed. Turpis in eu mi bibendum
-                            neque egestas congue. Rhoncus est pellentesque elit
-                            ullamcorper dignissim cras lobortis.
-                        </sp-dialog>
-
-                        <sp-dialog size="m" dismissable>
-                            <h2 slot="heading">Disclaimer</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Auctor augue mauris augue neque
-                            gravida. Libero volutpat sed ornare arcu. Quisque
-                            egestas diam in arcu cursus euismod quis viverra.
-                            Posuere ac ut consequat semper viverra nam libero
-                            justo laoreet. Enim ut tellus elementum sagittis
-                            vitae et leo duis ut. Neque laoreet suspendisse
-                            interdum consectetur libero id faucibus nisl. Diam
-                            volutpat commodo sed egestas egestas. Dolor magna
-                            eget est lorem ipsum dolor. Vitae suscipit tellus
-                            mauris a diam maecenas sed. Turpis in eu mi bibendum
-                            neque egestas congue. Rhoncus est pellentesque elit
-                            ullamcorper dignissim cras lobortis.
-                        </sp-dialog>
-
-                        <sp-dialog size="m" dismissable no-divider>
-                            <h2 slot="heading">Disclaimer</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Auctor augue mauris augue neque
-                            gravida. Libero volutpat sed ornare arcu. Quisque
-                            egestas diam in arcu cursus euismod quis viverra.
-                            Posuere ac ut consequat semper viverra nam libero
-                            justo laoreet. Enim ut tellus elementum sagittis
-                            vitae et leo duis ut. Neque laoreet suspendisse
-                            interdum consectetur libero id faucibus nisl. Diam
-                            volutpat commodo sed egestas egestas. Dolor magna
-                            eget est lorem ipsum dolor. Vitae suscipit tellus
-                            mauris a diam maecenas sed. Turpis in eu mi bibendum
-                            neque egestas congue. Rhoncus est pellentesque elit
-                            ullamcorper dignissim cras lobortis.
-                        </sp-dialog>
-
-                        <sp-dialog size="medium" dismissable no-divider>
-                            <div
-                                slot="hero"
-                                style="
-                                    background-image: url(https://place.dog/500/280);
-                                "
-                            ></div>
-                            <h2 slot="heading">Disclaimer</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Auctor augue mauris augue neque
-                            gravida. Libero volutpat sed ornare arcu. Quisque
-                            egestas diam in arcu cursus euismod quis viverra.
-                            Posuere ac ut consequat semper viverra nam libero
-                            justo laoreet. Enim ut tellus elementum sagittis
-                            vitae et leo duis ut. Neque laoreet suspendisse
-                            interdum consectetur libero id faucibus nisl. Diam
-                            volutpat commodo sed egestas egestas. Dolor magna
-                            eget est lorem ipsum dolor. Vitae suscipit tellus
-                            mauris a diam maecenas sed. Turpis in eu mi bibendum
-                            neque egestas congue. Rhoncus est pellentesque elit
-                            ullamcorper dignissim cras lobortis.
-                        </sp-dialog>
-
-                        <sp-dialog size="s">
-                            <h2 slot="heading">Disclaimer</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Auctor augue mauris augue neque
-                            gravida. Libero volutpat sed ornare arcu. Quisque
-                            egestas diam in arcu cursus euismod quis viverra.
-                            Posuere ac ut consequat semper viverra nam libero
-                            justo laoreet. Enim ut tellus elementum sagittis
-                            vitae et leo duis ut. Neque laoreet suspendisse
-                            interdum consectetur libero id faucibus nisl. Diam
-                            volutpat commodo sed egestas egestas. Dolor magna
-                            eget est lorem ipsum dolor. Vitae suscipit tellus
-                            mauris a diam maecenas sed. Turpis in eu mi bibendum
-                            neque egestas congue. Rhoncus est pellentesque elit
-                            ullamcorper dignissim cras lobortis.
-                            <sp-button
-                                variant="primary"
-                                treatment="outline"
-                                slot="button"
-                            >
-                                Cancel
-                            </sp-button>
-                            <sp-button
-                                variant="accent"
-                                slot="button"
-                                treatment="fill"
-                            >
-                                Enable
-                            </sp-button>
-                        </sp-dialog>
-
-                        <sp-dialog size="s">
-                            <h2 slot="heading">Disclaimer</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Auctor augue mauris augue neque
-                            gravida. Libero volutpat sed ornare arcu. Quisque
-                            egestas diam in arcu cursus euismod quis viverra.
-                            Posuere ac ut consequat semper viverra nam libero
-                            justo laoreet. Enim ut tellus elementum sagittis
-                            vitae et leo duis ut. Neque laoreet suspendisse
-                            interdum consectetur libero id faucibus nisl. Diam
-                            volutpat commodo sed egestas egestas. Dolor magna
-                            eget est lorem ipsum dolor. Vitae suscipit tellus
-                            mauris a diam maecenas sed. Turpis in eu mi bibendum
-                            neque egestas congue. Rhoncus est pellentesque elit
-                            ullamcorper dignissim cras lobortis.
-                            <sp-button-group slot="footer">
-                                <sp-button variant="primary">
-                                    Button 1
-                                </sp-button>
-                                <sp-button variant="negative">
-                                    Button 2
-                                </sp-button>
-                            </sp-button-group>
-                        </sp-dialog>
+                        <my-help-text class="my-help-text" size="xl">
+                            It provides either an informative description or an
+                            error message that gives more context about what a
+                            user needs to input. It's commonly used in forms.
+                        </my-help-text>
                     </div>
                 </div>
             </div>

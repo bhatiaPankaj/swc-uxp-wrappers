@@ -10,15 +10,4 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { ButtonGroup } from '@swc-uxp-internal/button-group/src/ButtonGroup.js';
-
-import styles from './uxp-button-group.css.js';
-
-class UxpButtonGroup extends ButtonGroup {
-    static get styles() {
-        // We are combining our styles to make all super class styles available along with the transitive dependendent classes styles.
-        return [super.styles, styles];
-    }
-}
-
-export { UxpButtonGroup as ButtonGroup };
+export * from '@swc-uxp-internal/help-text/src/HelpTextManager.js';

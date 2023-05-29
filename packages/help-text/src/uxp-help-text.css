@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 
 /* write uxp style overrides */
 
+/* Workaround for - https://jira.corp.adobe.com/browse/UXP-21328 */
 .icon {
     margin-right: var(
         --mod-helptext-text-to-visual,

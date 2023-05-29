@@ -32,8 +32,6 @@ import '@spectrum-web-components/popover/sp-popover.js';
 import '@spectrum-web-components/tooltip/sp-tooltip.js';
 import '@spectrum-web-components/picker-button/sp-picker-button.js';
 import '@spectrum-web-components/help-text/sp-help-text.js';
-import '@spectrum-web-components/button-group/sp-button-group.js';
-import '@spectrum-web-components/dialog/sp-dialog.js';
 import '@spectrum-web-components/menu/sp-menu.js';
 import '@spectrum-web-components/menu/sp-menu-item.js';
 import '@spectrum-web-components/menu/sp-menu-group.js';

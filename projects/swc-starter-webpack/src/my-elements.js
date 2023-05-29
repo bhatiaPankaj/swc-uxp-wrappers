@@ -29,6 +29,8 @@ import { MenuItem } from '@spectrum-web-components/menu';
 import { MenuDivider } from '@spectrum-web-components/menu';
 import { MenuGroup } from '@spectrum-web-components/menu';
 import { PickerButton } from '@spectrum-web-components/picker-button';
+import { HelpText } from '@spectrum-web-components/help-text';
+import { Textfield } from '@spectrum-web-components/textfield';
 
 import { css } from 'lit';
 
@@ -252,6 +254,32 @@ class MyMenuGroup extends MenuGroup {
     ];
 }
 
+class MyHelpText extends HelpText {
+    static styles = [
+        HelpText.styles,
+        css`
+            :host([variant='neutral']) .text {
+                background-color: darkcyan;
+                color: whitesmoke;
+                font-style: italic;
+                padding: 10px;
+            }
+        `,
+    ];
+}
+
+class MyTextfield extends Textfield {
+    static styles = [
+        Textfield.styles,
+        css`
+            .input {
+                background-color: darkcyan;
+                color: antiquewhite;
+            }
+        `,
+    ];
+}
+
 customElements.define('my-banner', MyBanner);
 customElements.define('my-action-group', MyActionGroup);
 customElements.define('my-checkbox', MyCheckbox);
@@ -271,3 +299,5 @@ customElements.define('my-menu-item', MyMenuItem);
 customElements.define('my-menu-divider', MyMenuDivider);
 customElements.define('my-menu-group', MyMenuGroup);
 customElements.define('my-picker-button', MyPickerButton);
+customElements.define('my-help-text', MyHelpText);
+customElements.define('my-textfield', MyTextfield);

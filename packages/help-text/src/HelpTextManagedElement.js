@@ -10,14 +10,4 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { DialogBase } from '@swc-uxp-internal/dialog/src/DialogBase.js';
-
-import styles from './uxp-dialog-base.css.js';
-
-class UxpDialogBase extends DialogBase {
-    static get styles() {
-        return [super.styles, styles];
-    }
-}
-
-export { UxpDialogBase as DialogBase };
+export * from '@swc-uxp-internal/help-text/src/HelpTextManagedElement.js';
