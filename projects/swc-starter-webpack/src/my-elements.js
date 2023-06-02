@@ -24,10 +24,12 @@ import { Checkbox } from '@spectrum-web-components/checkbox';
 import { ActionBar } from '@spectrum-web-components/action-bar';
 import { Popover } from '@spectrum-web-components/popover';
 import { Tooltip } from '@spectrum-web-components/tooltip';
-import { Menu } from '@spectrum-web-components/menu';
-import { MenuItem } from '@spectrum-web-components/menu';
-import { MenuDivider } from '@spectrum-web-components/menu';
-import { MenuGroup } from '@spectrum-web-components/menu';
+import {
+    Menu,
+    MenuItem,
+    MenuDivider,
+    MenuGroup,
+} from '@spectrum-web-components/menu';
 import { PickerButton } from '@spectrum-web-components/picker-button';
 import { HelpText } from '@spectrum-web-components/help-text';
 import { Textfield } from '@spectrum-web-components/textfield';

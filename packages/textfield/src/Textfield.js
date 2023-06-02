@@ -16,7 +16,7 @@ import styles from './uxp-textfield.css.js';
 
 class UxpTextfield extends Textfield {
     static get styles() {
-        // We are combining our styles to make all super class styles available along with the transitive dependendent classes styles.
+        // We are combining our styles to make all super class styles available along with the transitive dependent classes styles.
         return [super.styles, styles];
     }
 }

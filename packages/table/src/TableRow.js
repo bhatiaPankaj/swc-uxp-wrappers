@@ -16,7 +16,7 @@ import styles from './uxp-table-row.css.js';
 
 class UxpTableRow extends TableRow {
     static get styles() {
-        // We are combining our styles to make all super class styles available along with the transitive dependendent classes styles.
+        // We are combining our styles to make all super class styles available along with the transitive dependent classes styles.
         return [super.styles, styles];
     }
 }
