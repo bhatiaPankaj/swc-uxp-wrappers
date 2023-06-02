@@ -16,8 +16,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
-import * as fs from 'fs';
-const aliasingList = JSON.parse(fs.readFileSync('./alias.json'));
+import { aliases } from './alias.js';
 
 const ENV = process.argv.find((arg) => arg.includes('NODE_ENV=production'))
     ? 'production'
@@ -123,7 +122,7 @@ const shared = (env) => {
         resolve: {
             extensions: ['.js', '.json'],
             // This is required for the spectrum web component to properly work in UXP
-            alias: aliasingList[0],
+            alias: aliases,
         },
         plugins,
         devServer: {
