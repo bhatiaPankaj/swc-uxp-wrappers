@@ -31,6 +31,8 @@ export const aliases = {
     '@spectrum-web-components/table': '@swc-uxp-wrappers/table',
     '@spectrum-web-components/textfield': '@swc-uxp-wrappers/textfield',
     '@spectrum-web-components/help-text': '@swc-uxp-wrappers/help-text',
+    '@spectrum-web-components/dialog': '@swc-uxp-wrappers/dialog',
+    '@spectrum-web-components/button-group': '@swc-uxp-wrappers/button-group',
     '../sp-menu.dev.js': '@spectrum-web-components/menu/sp-menu.js',
     '../sp-menu.js': '@spectrum-web-components/menu/sp-menu.js',
     '../sp-table-row.dev.js': '@spectrum-web-components/table/sp-table-row.js',

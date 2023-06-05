@@ -58,5 +58,7 @@ import '@spectrum-web-components/icons-workflow/icons/sp-icon-display-advert.js'
 import '@spectrum-web-components/icons-workflow/icons/sp-icon-add-to.js';
 import '@spectrum-web-components/icons-workflow/icons/sp-icon-add-to-selection.js';
 import '@spectrum-web-components/icons-workflow/icons/sp-icon-edit.js';
+import '@spectrum-web-components/dialog/sp-dialog.js';
+import '@spectrum-web-components/button-group/sp-button-group.js';
 
 import './my-elements.js';

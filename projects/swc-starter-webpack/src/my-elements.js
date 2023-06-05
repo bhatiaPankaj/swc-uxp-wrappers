@@ -33,6 +33,8 @@ import {
 import { PickerButton } from '@spectrum-web-components/picker-button';
 import { HelpText } from '@spectrum-web-components/help-text';
 import { Textfield } from '@spectrum-web-components/textfield';
+import { Dialog } from '@spectrum-web-components/dialog';
+import { ButtonGroup } from '@spectrum-web-components/button-group';
 
 import { css } from 'lit';
 
@@ -282,6 +284,28 @@ class MyTextfield extends Textfield {
     ];
 }
 
+class MyDialog extends Dialog {
+    static styles = [
+        Dialog.styles,
+        css`
+            :host {
+                background-color: green;
+            }
+        `,
+    ];
+}
+
+class MyButtonGroup extends ButtonGroup {
+    static styles = [
+        ButtonGroup.styles,
+        css`
+            :host {
+                background-color: green;
+            }
+        `,
+    ];
+}
+
 customElements.define('my-banner', MyBanner);
 customElements.define('my-action-group', MyActionGroup);
 customElements.define('my-checkbox', MyCheckbox);
@@ -303,3 +327,5 @@ customElements.define('my-menu-group', MyMenuGroup);
 customElements.define('my-picker-button', MyPickerButton);
 customElements.define('my-help-text', MyHelpText);
 customElements.define('my-textfield', MyTextfield);
+customElements.define('my-dialog', MyDialog);
+customElements.define('my-button-group', MyButtonGroup);
