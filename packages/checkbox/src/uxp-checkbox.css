@@ -12,6 +12,16 @@ governing permissions and limitations under the License.
 
 /* write uxp style overrides */
 
+:host {
+    --uxp-swc-checkbox-label-alignment-factor: -0.5px;
+}
+#label {
+    display: inline-flex;
+    align-items: center;
+    margin-top: var(--uxp-swc-checkbox-label-alignment-factor);
+    min-height: var(--spectrum-checkbox-height);
+}
+
 /* Workaround for -
     https://jira.corp.adobe.com/browse/UXP-20845
     https://jira.corp.adobe.com/browse/UXP-20650 
